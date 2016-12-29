@@ -1,0 +1,45 @@
+{
+  "presets": [
+    "react"
+  ],
+  "plugins": [
+    "closure-elimination",
+    "transform-object-rest-spread",
+    "transform-class-properties"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["env", { "targets": { "node": "current" }, "useBuiltIns": true }]
+      ]
+    },
+    "development": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["chrome >= 54"]
+          },
+          "useBuiltIns": true,
+          "modules": false
+        }]
+      ],
+      "plugins": ["react-hot-loader/babel"]
+    },
+    "production": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["chrome >= 54", "safari >= 10", "ios >= 10", "firefox >= 50"]
+          },
+          "useBuiltIns": true,
+          "modules": false
+        }]
+      ],
+      "plugins": [
+//        "transform-react-constant-elements",
+        "transform-react-inline-elements",
+        "transform-node-env-inline"
+      ]
+    }
+  }
+}
