@@ -3,6 +3,7 @@
     "react"
   ],
   "plugins": [
+    "ramda", "date-fns",
     "closure-elimination",
     "transform-object-rest-spread",
     "transform-class-properties"
@@ -36,7 +37,6 @@
         }]
       ],
       "plugins": [
-//        "transform-react-constant-elements",
         "transform-react-inline-elements",
         "transform-node-env-inline"
       ]

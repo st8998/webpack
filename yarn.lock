@@ -448,6 +448,10 @@ babel-plugin-closure-elimination@^1.1.14:
   dependencies:
     babel-polyfill "^6.3.14"
 
+babel-plugin-date-fns@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-date-fns/-/babel-plugin-date-fns-0.1.0.tgz#6ad4e66129bc051bec9300a0a256e73a983c04a6"
+
 babel-plugin-istanbul@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-3.0.0.tgz#da7324520ae0b8a44b6a078e72e883374a9fab76"
@@ -513,6 +517,12 @@ babel-plugin-minify-type-constructors@^0.0.2:
   resolved "https://registry.yarnpkg.com/babel-plugin-minify-type-constructors/-/babel-plugin-minify-type-constructors-0.0.2.tgz#4f9a28951e776f31ac11a29cd58cf9eef8b2e292"
   dependencies:
     babel-helper-is-void-0 "^0.0.1"
+
+babel-plugin-ramda@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/babel-plugin-ramda/-/babel-plugin-ramda-1.1.6.tgz#15a508c8b4a9db3b3c856a53a2008d024f68e792"
+  dependencies:
+    ramda "^0.19.1"
 
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
@@ -3511,6 +3521,10 @@ querystring@0.2.0:
 querystringify@0.0.x:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-0.0.4.tgz#0cf7f84f9463ff0ae51c4c4b142d95be37724d9c"
+
+ramda@^0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.19.1.tgz#89c4ad697265ff6b1face9f286439e2520d6679c"
 
 ramda@^0.22.1:
   version "0.22.1"

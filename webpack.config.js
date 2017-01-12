@@ -1,6 +1,6 @@
 const { resolve } = require('path')
 const { HotModuleReplacementPlugin, NamedModulesPlugin, ProvidePlugin, DefinePlugin,
-  optimize: { CommonsChunkPlugin, DedupePlugin, AggressiveMergingPlugin } } = require('webpack')
+  optimize: { AggressiveMergingPlugin } } = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const BabiliPlugin = require('babili-webpack-plugin')
 const OptimizeJsPlugin = require('optimize-js-plugin')
@@ -43,14 +43,11 @@ const BASE = {
 if (process.env.NODE_ENV === 'production') {
   module.exports = merge(BASE, {
     entry: {
-      vendor: ['react', 'react-dom', 'react-redux', 'redux', 'bluebird', 'ramda'],
       bundle: './index.js'
     },
     output: { filename: '[name]-[chunkhash].js' },
     devtool: false,
     plugins: [
-      new CommonsChunkPlugin({ names: ['vendor', 'manifest'] }),
-      new DedupePlugin(),
       new AggressiveMergingPlugin(),
       new BabiliPlugin()
     ]
